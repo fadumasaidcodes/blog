@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 75px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgray;
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+#blog-posts {
+  grid-column: 2;
+}
+
+.blog-post {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-post h2 {
+  margin-top: 0;
+}
+
+.blog-post .date {
+  color: gray;
+  font-size: 0.8em;
+  margin-bottom: 20px;
+}
+
+.blog-post .author {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.blog-post p {
+  line-height: 1.5;
+}
+
+.blog-post .comments {
+  margin-top: 20px;
+  border-top: 1px solid lightgray;
+  padding-top: 20px;
+}
+
+.blog-post .comment {
+  margin-bottom: 20px;
+}
+
+.blog-post .comment .author {
+  font-style: italic;
+}
+
+.blog-post .comment .date {
+  color: gray;
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}
+
+.blog-post .comment p {
+  line-height: 1.5;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: rgb(16, 16, 16);
+    text-align: center;
+    padding: 20px
+}
+
+footer p {
+  margin: 0;
+}
+
+img {
+  height: 30px;
+  margin-left: 10px;
+}
